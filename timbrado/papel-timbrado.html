@@ -1,0 +1,100 @@
+<meta charset="utf-8">
+<title>Papel Timbrado — Brunoer Teles Barreto Filho</title>
+<style>
+/* ============================================================
+   PAPEL TIMBRADO — Brunoer Teles Barreto Filho
+   Arquivo autossuficiente. Para gerar PDF: imprimir em A4,
+   margens "padrão do documento", sem cabeçalho/rodapé do navegador.
+   ============================================================ */
+:root{
+  --tinta:#16283F; --bronze:#A07E4A; --texto:#1F2328;
+  --suave:#667081; --fio:#D6DBE2;
+  --serif:"Bitstream Charter",Charter,"Liberation Serif",Georgia,serif;
+  --sans:"Liberation Sans",Arial,Helvetica,sans-serif;
+}
+*{box-sizing:border-box}
+@page{ size:A4; margin:0 }
+html,body{margin:0;padding:0;background:#fff;color:var(--texto);
+  font-family:var(--serif);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+
+/* Cabeçalho e rodapé fixos: repetem em todas as páginas na impressão */
+.timbre-topo{position:fixed;top:0;left:0;right:0;padding:15mm 20mm 0}
+.timbre-base{position:fixed;bottom:0;left:0;right:0;padding:0 20mm 12mm}
+
+/* Área de digitação */
+.corpo{padding:44mm 20mm 26mm;font-size:11pt;line-height:1.7;text-align:justify}
+.corpo p{margin:0 0 5mm}
+
+/* ---------- Marca ---------- */
+.timbre{display:flex;align-items:flex-start;justify-content:space-between;gap:8mm}
+.timbre-marca{display:flex;align-items:center;gap:4.5mm}
+.seal{position:relative;width:13mm;height:13mm;flex:0 0 13mm;background:var(--tinta);
+  color:#fff;font-size:21px;font-weight:700;line-height:13mm;text-align:center}
+.seal::after{content:"";position:absolute;inset:1.1mm;border:.6px solid rgba(160,126,74,.85)}
+.marca-nome{margin:0;font-size:12.5pt;font-weight:700;color:var(--tinta);
+  text-transform:uppercase;letter-spacing:.13em}
+.marca-linha{margin:1.6mm 0 0;font-family:var(--sans);font-size:7pt;letter-spacing:.17em;
+  text-transform:uppercase;color:var(--bronze)}
+.timbre-contato{font-family:var(--sans);font-size:7.6pt;line-height:1.7;color:var(--suave);
+  text-align:right;white-space:nowrap}
+.timbre-contato b{color:var(--tinta);font-weight:600}
+
+/* ---------- Filete duplo: assinatura gráfica ---------- */
+.filete{position:relative;height:2.6mm;margin-top:3.4mm}
+.filete::before{content:"";position:absolute;top:0;left:0;right:0;height:1.1px;background:var(--tinta)}
+.filete::after{content:"";position:absolute;top:1.9mm;left:0;right:0;height:.5px;background:var(--fio)}
+.filete>i{position:absolute;top:0;left:0;width:22mm;height:1.1px;background:var(--bronze)}
+
+/* ---------- Rodapé ---------- */
+.rodape{border-top:.5px solid var(--fio);padding-top:2.4mm;font-family:var(--sans);
+  font-size:6.8pt;letter-spacing:.06em;color:var(--suave);display:flex;
+  justify-content:space-between;gap:6mm}
+.rodape .marca-min{color:var(--tinta);font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+
+/* Monograma de fundo, discreto */
+.marca-dagua{position:fixed;right:14mm;bottom:22mm;font-size:150px;line-height:1;
+  color:var(--tinta);opacity:.035;font-weight:700}
+
+/* Texto de exemplo — apagar ao usar */
+.exemplo{color:#9aa2ad}
+</style>
+
+<div class="marca-dagua">B</div>
+
+<header class="timbre-topo">
+  <div class="timbre">
+    <div class="timbre-marca">
+      <div class="seal">B</div>
+      <div>
+        <h1 class="marca-nome">Brunoer Teles Barreto Filho</h1>
+        <p class="marca-linha">Direito Empresarial &middot; Contratos &middot; Contencioso</p>
+      </div>
+    </div>
+    <div class="timbre-contato">
+      <b>(64) 99213-7685</b><br>
+      brunoerfilho@hotmail.com<br>
+      linkedin.com/in/brunoerfilho
+    </div>
+  </div>
+  <div class="filete"><i></i></div>
+</header>
+
+<main class="corpo">
+  <p class="exemplo">Uberl&acirc;ndia/MG, ___ de _____________ de 20___.</p>
+  <p class="exemplo">À <br>[Destinatário]</p>
+  <p class="exemplo">Prezados Senhores,</p>
+  <p class="exemplo">
+    Este é o espaço de digitação do papel timbrado. Apague este texto de exemplo e escreva
+    o conteúdo da carta de apresentação, do parecer ou da comunicação. O cabeçalho e o
+    rodapé se repetem automaticamente em todas as páginas na impressão.
+  </p>
+  <p class="exemplo">Atenciosamente,</p>
+  <p class="exemplo">___________________________________<br>Brunoer Teles Barreto Filho</p>
+</main>
+
+<footer class="timbre-base">
+  <div class="rodape">
+    <span class="marca-min">Brunoer Teles Barreto Filho</span>
+    <span>Uberl&acirc;ndia/MG &middot; (64) 99213-7685 &middot; brunoerfilho@hotmail.com</span>
+  </div>
+</footer>

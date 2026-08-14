@@ -1,0 +1,207 @@
+<meta charset="utf-8">
+<title>Currículo — Brunoer Teles Barreto Filho</title>
+<style>
+/* ============================================================
+   CURRÍCULO — Brunoer Teles Barreto Filho
+   Mesma identidade do papel timbrado (timbrado/papel-timbrado.html).
+   Coluna única + rótulos na margem: elegante e legível por ATS.
+   ============================================================ */
+:root{
+  --tinta:#16283F; --bronze:#A07E4A; --texto:#1F2328;
+  --suave:#667081; --fio:#D6DBE2;
+  --serif:"Bitstream Charter",Charter,"Liberation Serif",Georgia,serif;
+  --sans:"Liberation Sans",Arial,Helvetica,sans-serif;
+}
+*{box-sizing:border-box}
+@page{ size:A4; margin:0 }
+html,body{margin:0;padding:0;background:#fff;color:var(--texto);
+  font-family:var(--serif);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+
+.folha{padding:13mm 17mm 11mm}
+
+/* ---------- Cabeçalho ---------- */
+.timbre{display:flex;align-items:flex-start;justify-content:space-between;gap:8mm}
+.timbre-marca{display:flex;align-items:center;gap:5mm}
+.seal{position:relative;width:15mm;height:15mm;flex:0 0 15mm;background:var(--tinta);
+  color:#fff;font-size:25px;font-weight:700;line-height:15mm;text-align:center}
+.seal::after{content:"";position:absolute;inset:1.3mm;border:.6px solid rgba(160,126,74,.85)}
+.marca-nome{margin:0;font-size:15pt;font-weight:700;color:var(--tinta);
+  text-transform:uppercase;letter-spacing:.11em;line-height:1.15}
+.marca-linha{margin:2mm 0 0;font-family:var(--sans);font-size:7.2pt;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--bronze)}
+.timbre-contato{font-family:var(--sans);font-size:7.6pt;line-height:1.75;color:var(--suave);
+  text-align:right;white-space:nowrap}
+.timbre-contato b{color:var(--tinta);font-weight:600}
+
+.filete{position:relative;height:2.6mm;margin-top:4mm}
+.filete::before{content:"";position:absolute;top:0;left:0;right:0;height:1.1px;background:var(--tinta)}
+.filete::after{content:"";position:absolute;top:1.9mm;left:0;right:0;height:.5px;background:var(--fio)}
+.filete>i{position:absolute;top:0;left:0;width:26mm;height:1.1px;background:var(--bronze)}
+
+/* ---------- Blocos com rótulo na margem ---------- */
+.bloco{display:grid;grid-template-columns:30mm 1fr;gap:7mm;padding:3.8mm 0;
+  border-bottom:.5px solid var(--fio)}
+.bloco:last-of-type{border-bottom:0}
+.rotulo{font-family:var(--sans);font-size:7.4pt;font-weight:700;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--tinta);padding-top:.6mm}
+.rotulo span{display:block;width:8mm;height:1.1px;background:var(--bronze);margin-bottom:2mm}
+
+.conteudo{font-size:9.6pt;line-height:1.46}
+.conteudo p{margin:0}
+.perfil{text-align:justify}
+.perfil b{color:var(--tinta)}
+
+/* ---------- Experiência / formação ---------- */
+.item{margin-bottom:3.8mm}
+.item:last-child{margin-bottom:0}
+.item-topo{display:flex;justify-content:space-between;align-items:baseline;gap:5mm}
+.item-topo h3{margin:0;font-size:10.2pt;font-weight:700;color:var(--tinta);letter-spacing:.005em}
+.quando{font-family:var(--sans);font-size:7.4pt;letter-spacing:.08em;color:var(--suave);
+  white-space:nowrap;text-transform:uppercase}
+.cargo{margin:.9mm 0 1.8mm;font-family:var(--sans);font-size:8.2pt;color:var(--suave);
+  letter-spacing:.02em}
+.cargo b{color:var(--texto);font-weight:600}
+
+ul{margin:0;padding:0;list-style:none}
+li{position:relative;padding-left:4.2mm;margin-bottom:1.1mm}
+li::before{content:"";position:absolute;left:0;top:1.55mm;width:1.6mm;height:1.6mm;
+  background:var(--bronze)}
+
+/* ---------- Competências ---------- */
+.grade{display:grid;grid-template-columns:1fr 1fr;gap:.6mm 7mm}
+.grade li{margin-bottom:.6mm}
+
+/* ---------- Rodapé ---------- */
+.rodape{margin-top:4mm;border-top:.5px solid var(--fio);padding-top:2.4mm;
+  font-family:var(--sans);font-size:6.8pt;letter-spacing:.06em;color:var(--suave);
+  display:flex;justify-content:space-between;gap:6mm}
+.rodape .marca-min{color:var(--tinta);font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+a{color:inherit;text-decoration:none}
+</style>
+
+<div class="folha">
+
+  <header>
+    <div class="timbre">
+      <div class="timbre-marca">
+        <div class="seal">B</div>
+        <div>
+          <h1 class="marca-nome">Brunoer Teles<br>Barreto Filho</h1>
+          <p class="marca-linha">Direito Empresarial &middot; Contratos &middot; Contencioso</p>
+        </div>
+      </div>
+      <div class="timbre-contato">
+        <b>(64) 99213-7685</b><br>
+        brunoerfilho@hotmail.com<br>
+        linkedin.com/in/brunoerfilho<br>
+        Uberl&acirc;ndia/MG
+      </div>
+    </div>
+    <div class="filete"><i></i></div>
+  </header>
+
+  <section class="bloco">
+    <div class="rotulo"><span></span>Perfil</div>
+    <div class="conteudo perfil">
+      <p>Graduando do <b>7&ordm; per&iacute;odo em Direito pela Universidade Federal de Uberl&acirc;ndia (UFU)</b>,
+      com est&aacute;gios em advocacia empresarial e em assessoria jur&iacute;dica popular. Atuo na
+      elabora&ccedil;&atilde;o e revis&atilde;o de contratos, pareceres e pe&ccedil;as processuais, em pesquisa
+      doutrin&aacute;ria e jurisprudencial e no acompanhamento de prazos, protocolos e controles
+      internos, incluindo suporte a projetos de <b>LGPD e propriedade intelectual</b>.
+      Ingl&ecirc;s avan&ccedil;ado certificado pela Cambridge. Busco est&aacute;gio em escrit&oacute;rio de
+      advocacia empresarial ou departamento jur&iacute;dico.</p>
+    </div>
+  </section>
+
+  <section class="bloco">
+    <div class="rotulo"><span></span>Experi&ecirc;ncia</div>
+    <div class="conteudo">
+
+      <div class="item">
+        <div class="item-topo">
+          <h3>ESAJUP &mdash; Escrit&oacute;rio de Assessoria Jur&iacute;dica Popular (UFU)</h3>
+          <span class="quando">abr/2026 &ndash; ago/2026</span>
+        </div>
+        <p class="cargo"><b>Estagi&aacute;rio de Direito</b> &middot; Uberl&acirc;ndia/MG</p>
+        <ul>
+          <li>Atendi assistidos de forma presencial e remota, conduzindo entrevistas e prestando
+              orienta&ccedil;&atilde;o jur&iacute;dica sob supervis&atilde;o docente.</li>
+          <li>Elaborei pe&ccedil;as processuais, manifesta&ccedil;&otilde;es e relat&oacute;rios de acompanhamento de casos.</li>
+          <li>Realizei pesquisa doutrin&aacute;ria, legislativa e jurisprudencial para fundamentar teses e
+              estrat&eacute;gias processuais.</li>
+          <li>Acompanhei processos, analisei autos e controlei prazos, assegurando o protocolo
+              tempestivo das manifesta&ccedil;&otilde;es.</li>
+          <li>Apoiei audi&ecirc;ncias e sess&otilde;es de m&eacute;todos consensuais de solu&ccedil;&atilde;o de conflitos.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-topo">
+          <h3>Amaral Advogados</h3>
+          <span class="quando">jun/2026 &ndash; jul/2026</span>
+        </div>
+        <p class="cargo"><b>Estagi&aacute;rio de Direito</b> &middot; &Aacute;rea consultiva e empresarial</p>
+        <ul>
+          <li>Elaborei, revisei e organizei contratos, pareceres, notifica&ccedil;&otilde;es e demais documentos
+              jur&iacute;dicos da carteira consultiva.</li>
+          <li>Conduzi pesquisas jur&iacute;dicas, doutrin&aacute;rias e jurisprudenciais para subsidiar pareceres
+              e respostas a clientes.</li>
+          <li>Acompanhei processos, prazos e protocolos, mantendo a organiza&ccedil;&atilde;o documental do
+              escrit&oacute;rio.</li>
+          <li>Apoiei projetos de adequa&ccedil;&atilde;o &agrave; <b>LGPD</b> e de <b>propriedade intelectual</b>.</li>
+          <li>Atualizei controles internos, planilhas e sistemas de gest&atilde;o jur&iacute;dica.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="bloco">
+    <div class="rotulo"><span></span>Forma&ccedil;&atilde;o</div>
+    <div class="conteudo">
+      <div class="item">
+        <div class="item-topo">
+          <h3>Bacharelado em Direito</h3>
+          <span class="quando">2024 &ndash; 2028</span>
+        </div>
+        <p class="cargo"><b>Universidade Federal de Uberl&acirc;ndia (UFU)</b> &middot; 7&ordm; per&iacute;odo &middot;
+        conclus&atilde;o prevista para 2028</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloco">
+    <div class="rotulo"><span></span>Idiomas e<br>certifica&ccedil;&otilde;es</div>
+    <div class="conteudo">
+      <ul>
+        <li><b>Ingl&ecirc;s &mdash; avan&ccedil;ado.</b> Certifica&ccedil;&atilde;o de profici&ecirc;ncia pela
+            Cambridge English Language Assessment.</li>
+        <li><b>Portugu&ecirc;s &mdash; nativo.</b></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="bloco">
+    <div class="rotulo"><span></span>Compet&ecirc;ncias</div>
+    <div class="conteudo">
+      <ul class="grade">
+        <li>Pesquisa doutrin&aacute;ria e jurisprudencial</li>
+        <li>Reda&ccedil;&atilde;o de pe&ccedil;as e manifesta&ccedil;&otilde;es</li>
+        <li>Elabora&ccedil;&atilde;o e revis&atilde;o de contratos</li>
+        <li>Pareceres e notifica&ccedil;&otilde;es</li>
+        <li>Controle de prazos e protocolos</li>
+        <li>An&aacute;lise de autos e acompanhamento processual</li>
+        <li>LGPD e prote&ccedil;&atilde;o de dados</li>
+        <li>Propriedade intelectual</li>
+        <li>M&eacute;todos consensuais de solu&ccedil;&atilde;o de conflitos</li>
+        <li>Pacote Office e planilhas de controle</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="rodape">
+    <span class="marca-min">Brunoer Teles Barreto Filho</span>
+    <span>Curr&iacute;culo atualizado em agosto de 2026</span>
+  </div>
+
+</div>
