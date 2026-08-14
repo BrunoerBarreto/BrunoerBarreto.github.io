@@ -1,0 +1,25 @@
+[project]
+name = "organizador-arquivos"
+version = "0.1.0"
+description = "Ferramenta de linha de comando para organizar automaticamente arquivos e documentos"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = []
+
+[project.optional-dependencies]
+metadados = ["pypdf>=4.0", "python-docx>=1.1", "openpyxl>=3.1"]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+organizador = "organizador.cli:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
