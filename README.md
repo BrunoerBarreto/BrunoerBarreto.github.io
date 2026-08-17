@@ -9,10 +9,10 @@ Sociedade Individual de Advocacia com atuação em Direito Administrativo, licit
 Depois de ativado (veja o passo a passo abaixo), o site fica disponível em:
 
 ```
-https://SEU-USUARIO.github.io/turbo-carnival/
+https://brunoerbarreto.github.io/turbo-carnival/
 ```
 
-Troque `SEU-USUARIO` pelo seu usuário do GitHub (ex.: `brunoerbarreto`). Esse endereço:
+Esse endereço:
 
 - **é gratuito para sempre**, sem custo de domínio ou hospedagem;
 - **só pode ser alterado por quem tem acesso de escrita a este repositório GitHub** (você e quem você convidar) — qualquer outra pessoa apenas visualiza;
@@ -35,6 +35,7 @@ O conteúdo (textos, áreas de atuação, TCM-GO, FAQ, contato) já está preenc
 1. **Logo oficial** — `assets/logo.svg` é um ícone de balança dourada recriado a partir da descrição do briefing (gradiente dourado sobre grafite). Substitua pelo ícone/lockup real extraído do `Cartão_de_Visitas.pdf` assim que o arquivo puder ser enviado neste chat (anexado ou colado como imagem). Mesmo nome de arquivo (`assets/logo.svg`) evita precisar tocar no HTML.
 2. **Respostas do FAQ** — foram redigidas como rascunho profissional a partir das 5 perguntas do briefing; revise o texto e ajuste conforme a prática real do escritório (prazos, política de honorários etc.).
 3. Campos propositalmente **omitidos** por instrução do escritório: cidade/sede, endereço, código de atividade (CNAE) e data de abertura/porte da empresa — não foram incluídos em nenhum lugar do site.
+4. **Instagram** — @brunoerbarretoadvocacia já está linkado no Contato, no rodapé e no `sameAs` do schema.org (SEO); é só o perfil ficar pronto.
 
 ## 📁 Estrutura
 
